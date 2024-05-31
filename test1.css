@@ -1,0 +1,180 @@
+.header{
+    background-color: #07AB67;
+    text-align: center;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    font-size: .875rem;
+    color: white;
+    display: block;
+    margin: 0;
+    font-weight: bold;
+    font-family: arial;
+}
+
+body{
+    margin: 0;
+    background-color: #121E2C;
+}
+
+.belowheader{
+    align-items: center;
+    display:flex;
+}
+
+.img{
+    display: flex;
+    align-items: center;
+    padding-left: 50px;
+    padding-top:20px;
+
+}
+
+.teen{
+    color:aliceblue ;
+    margin-left: 620px;
+    font-size: 20px;
+}
+
+.company{
+    color: white;
+    font-size: 20px;
+}
+
+.parent{
+    color: white;
+    font-size: 20px;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.android{
+    align-self: center;
+    align-content: center;
+    display: flex;
+}
+
+.belowheader.navigation{
+    align-items: center;
+    display: flex;
+
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 50px;
+    
+    color: white;
+    text-align: center;
+    padding-top: 15px;
+  }
+  
+ .footer-text1 {
+    text-align: center;
+    
+  }
+  
+ .footer-text2 {
+    text-align: center;
+    
+  }
+
+
+.about{
+    background-color: #1F2E40;
+    margin-top: 80px;
+}
+
+.aboutcontent{
+    background-color: #1F2E40;
+}
+
+.aboutcontentfunngro1{
+    display: block;
+}
+
+.aboutcontentfunngro{
+    color: aliceblue;
+    padding: 10px;
+}
+
+.aboutcontentfunngro12{
+    color: beige;
+    padding: 5px
+
+}
+
+.lastone1{
+    color: aliceblue;
+    padding: 10px;
+}
+
+/* flip card section */
+
+.grid-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin: 50px auto;
+    padding: 0 20px;
+    justify-content: center;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 100%;
+    height: 100%;
+    perspective: 1000px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.6s;
+    transform-style: preserve-3d;
+}
+
+.flip-card:hover.flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,.flip-card-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card-front {
+    background: rgb(238,174,202);
+    background: linear-gradient(121deg, rgba(238,174,202,1) 0%, rgba(36,87,148,1) 46%);
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.flip-card-back {
+    background-color: #07AB67;
+    color: white;
+    transform: rotateY(180deg);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
